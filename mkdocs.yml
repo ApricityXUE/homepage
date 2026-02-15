@@ -78,11 +78,11 @@ theme:
 # [点击按钮跳转至 GitHub 修改 Markdown 源文件]
 # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#code-actions
 edit_uri: edit/main/docs/
-# [top-right corner]
-# [添加 GitHub 仓库]
-# https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/
-repo_url: https://github.com/ApricityXUE/homepage
-repo_name: ApricityXUE.github.io/homepage
+# # [top-right corner]
+# # [添加 GitHub 仓库]
+# # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/
+# repo_url: https://github.com/ApricityXUE/homepage
+# repo_name: ApricityXUE.github.io/homepage
 # [bottom-left corner]
 # [版权说明]
 # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/#copyright-notice
