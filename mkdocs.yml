@@ -17,8 +17,8 @@ nav:
 # [top]
 theme:
   name: material
-  icon:
-    logo: material/library-shelves
+  icon: 
+    logo: assets/logo.png
   font:
     text: Lora
     code: Sans Code
