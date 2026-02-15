@@ -29,10 +29,10 @@ theme:
     - scheme: default
       # 主颜色
       # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#primary-color
-      primary: indigo
+      primary: blue grey
       # 链接等可交互元件的高亮色
       # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#accent-color
-      accent: orange
+      accent: deep orange
       toggle:
         # 图标
         icon: material/brightness-4
@@ -40,8 +40,8 @@ theme:
         name: 切换至夜间模式
     # 夜间模式
     - scheme: slate
-      primary: indigo
-      accent: orange
+      primary: blue grey
+      accent: deep orange
       toggle:
         icon: material/brightness-7
         name: 切换至日间模式
