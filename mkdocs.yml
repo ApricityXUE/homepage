@@ -20,7 +20,7 @@ theme:
   logo: assets/logo_1.png
   favicon: assets/favicon_1.png
   font:
-    text: Lora
+    text: Roboto Flex # Lora
     code: Sans Code
   # [切换日间模式和夜间模式]
   # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#color-palette-toggle
