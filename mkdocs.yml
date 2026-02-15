@@ -7,8 +7,10 @@ site_description: Sheeran's Homepage
 
 # [Navigation]
 nav:
-  - Home: index.md
-  - About: about.md
+  - Home: 
+    - index.md
+  - About: 
+    - about.md
 
 # [UI]
 # [top]
