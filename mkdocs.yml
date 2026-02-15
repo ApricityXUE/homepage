@@ -17,8 +17,8 @@ nav:
 # [top]
 theme:
   name: material
-  icon: 
-    logo: assets/logo.png
+  icon:
+      logo: material/cloud
   font:
     text: Lora
     code: Sans Code
