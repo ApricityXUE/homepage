@@ -17,8 +17,8 @@ nav:
 # [top]
 theme:
   name: material
-  logo: assets/logo2.png
-  # favicon: assets/test.png
+  logo: assets/self.png
+  favicon: assets/favicon_1.png
   font:
     text: Lora
     code: Sans Code
