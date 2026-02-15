@@ -18,7 +18,7 @@ nav:
 theme:
   name: material
   icon:
-    logo: material/library-outline
+    logo: material/library-shelves
   font:
     text: Lora
     code: Sans Code
