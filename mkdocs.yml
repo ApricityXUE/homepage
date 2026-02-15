@@ -41,7 +41,7 @@ theme:
       primary: indigo
       accent: orange
       toggle:
-        icon: material/weather-sunny
+        icon: material/toggle-switch-off-outline # weather-sunny
         name: 切换至日间模式
   features:
     # 使用 Tab 来进行分类
