@@ -17,7 +17,7 @@ nav:
 # [top]
 theme:
   name: material
-  icon: gupiao.png
+  icon: assets/gupiao.png
   font:
     text: Lora
     code: Sans Code
