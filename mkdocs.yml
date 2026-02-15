@@ -9,12 +9,9 @@ site_description: Sheeran's Homepage
 nav:
   - Home: 
     - index.md
-    - 江顺科技:
-      - 江顺科技.md
-    - 英特尔与CPU产业:
-      - 英特尔与CPU产能.md
-  - About: 
-    - about.md
+    - 江顺科技: 江顺科技.md
+    - 英特尔与CPU产业: 英特尔与CPU产能.md
+  - About: about.md
 
 # [UI]
 # [top]
