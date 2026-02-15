@@ -2,6 +2,8 @@
 
 这是我现在的主页毛胚，计划是用于记录一些平时的思考。
 
+## Welcome to MkDocs
+
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Commands
