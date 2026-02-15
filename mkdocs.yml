@@ -8,8 +8,11 @@ site_description: Sheeran's Homepage
 # [Navigation]
 nav:
   - Home: 
-    - XSY的稳健投资理论.md
-    - Backup: index.md
+    - index.md
+    - 江顺科技:
+      - 江顺科技.md
+    - 英特尔与CPU产业:
+      - 英特尔与CPU产能.md
   - About: 
     - about.md
 
