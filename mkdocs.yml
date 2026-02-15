@@ -1,4 +1,16 @@
-site_name: My Docs
+# [Info]
+# 左上角标题
+site_name: Sheeran's Homepage
+site_url: https://apricityxue.github.io/homepage/
+site_author: Sheeran Xue
+site_description: Sheeran's Homepage
 
+# [Navigation]
+nav:
+  - Home: index.md
+  - About: about.md
+
+# [UI]
+# [top]
 theme:
   name: material
