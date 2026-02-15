@@ -17,8 +17,8 @@ nav:
 # [top]
 theme:
   name: material
-  logo: assets/logo.png
-  favicon: assets/test.png
+  logo: assets/logo2.png
+  # favicon: assets/test.png
   font:
     text: Lora
     code: Sans Code
@@ -29,7 +29,7 @@ theme:
     - scheme: default
       # 主颜色
       # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#primary-color
-      primary: blue grey
+      primary: white
       # 链接等可交互元件的高亮色
       # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#accent-color
       accent: deep orange
