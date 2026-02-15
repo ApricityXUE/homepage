@@ -8,8 +8,8 @@ site_description: Sheeran's Homepage
 # [Navigation]
 nav:
   - Home: 
-    - index.md
     - XSY的稳健投资理论.md
+    - Backup: index.md
   - About: 
     - about.md
 
