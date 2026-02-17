@@ -13,6 +13,10 @@ nav:
       - 佰维存储.md
       - 江顺科技.md
       - 英特尔与CPU产能.md
+    - 金融理论知识:
+      - 价值与价格.md
+    - 投资学理论知识:
+      - 货币的时间价值.md
   - About: about.md
 
 # [UI]
@@ -173,3 +177,5 @@ extra_css:
   - mkdocs/css/no-footer.css
   # 无序列表符号自定义
   - mkdocs/css/unordered-list-symbols.css
+  # [XSY补充] style风格
+  - style.css
