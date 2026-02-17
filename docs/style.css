@@ -44,16 +44,3 @@
 .footer-title{
   font-weight: 600;
 }
-
-
-/* ---------- 移动端适配 ---------- */
-@media (max-width: 900px){
-  .grid-3,
-  .grid-2{
-    grid-template-columns: 1fr;    /* 小屏单列 */
-  }
-
-  .hero h1{
-    font-size: 32px;
-  }
-}
