@@ -14,7 +14,7 @@
 </p>
 
 <div>
-  <p align="center">
+  <p align="center" class="badges">
     <!-- Twitter -->
     <a href="https://x.com/r1bjtythrbigbi9" target="_blank">
       <img src="https://img.shields.io/badge/Twitter-推特-blue" />
@@ -103,7 +103,7 @@ function copyWechatId() {
 
 <!-- 这是我现在的主页毛胚，计划是用于记录一些平时的思考。 -->
 
-### 快速开始
+## 快速开始
 
 <div class="grid grid-2">
   <div class="card">
