@@ -178,4 +178,4 @@ extra_css:
   # 无序列表符号自定义
   - mkdocs/css/unordered-list-symbols.css
   # [XSY补充] style风格
-  # - style.css
+  - style.css
