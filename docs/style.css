@@ -45,45 +45,29 @@
   font-weight: 600;
 }
 
-/* 徽章条：保持一行，不挤；放不下时横向滚动 */
+/* 徽章条：桌面端“更松更高级”，移动端“更紧更省空间” */
 .badges{
-  display: flex;                      /* 用 flex 控制排版 */
-  align-items: center;                /* 垂直居中 */
-  justify-content: center;            /* 宽屏居中 */
+  display: flex;                 /* 用 flex 管控间距与居中 */
+  justify-content: center;       /* 居中 */
+  align-items: center;
 
-  gap: 12px;                          /* 徽章之间的“舒适间距”（不挤的关键） */
-  margin: 0;                          /* 去掉 p 默认 margin */
-  padding: 6px 10px;                  /* 两侧留白，滑动时手感更像官网 */
-
-  flex-wrap: nowrap;                  /* 关键：永远不换行 */
-  overflow-x: auto;                   /* 放不下 → 横向滚动 */
-  overflow-y: hidden;
-
-  -webkit-overflow-scrolling: touch;  /* iOS 惯性滚动 */
-  scroll-snap-type: x mandatory;      /* 滑动停靠感（更高级，可选） */
+  flex-wrap: wrap;              /* 桌面够宽：一般不会换行；窄屏可换行 */
+  gap: 24px;                    /* ✅ 桌面端松一点（关键） */
+  margin: 10px 0 0;             /* 给上方留点气口 */
+  padding: 0;                   /* 不额外挤占空间 */
 }
 
-/* 每个徽章作为“停靠点”（可选，但体验很不错） */
-.badges > a{
-  flex: 0 0 auto;                     /* 不拉伸不压缩，保持自然宽度 */
-  scroll-snap-align: center;          /* 滑动停靠到中间 */
-}
-
-/* 徽章图片：统一高度，避免过大导致更容易挤 */
+/* 徽章图片：桌面端略大一点更“舒展” */
 .badges img{
-  height: 24px;                       /* 推荐 22~26；24 在手机上比较舒服 */
+  height: 20px;                 /* ✅ 桌面端更舒服（22~28 都可） */
 }
 
-/* 小屏幕：稍微缩一点，但仍保持不挤 */
-@media (max-width: 420px){
-  .badges{ gap: 10px; }
-  .badges img{ height: 22px; }
-}
-
-/* 隐藏滚动条（更“官网风”） */
-.badges::-webkit-scrollbar{
-  display: none;                      /* Chrome/Safari */
-}
-.badges{
-  scrollbar-width: none;              /* Firefox */
+/* 平板/小屏：间距收紧一点 */
+@media (max-width: 900px){
+  .badges{
+    gap: 10px;                  /* 移动端挤一点没关系：这里变紧 */
+  }
+  .badges img{
+    height: 18px;               /* 移动端徽章小一点，更容易一行/两行 */
+  }
 }
