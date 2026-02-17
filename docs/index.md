@@ -1,117 +1,85 @@
 # Welcome to My Homepage
-
+<!-- 
 <p align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=250&section=header&text=HI%20THERE!&fontSize=80&fontAlign=50&fontAlignY=30&animation=twinkling" />
-</p>
+</p> -->
 
-<p align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=40&pause=1000&center=true&width=800&height=70&lines=Welcom+to+Sheeran's+Homepage!" alt="Typing SVG" /></a>
-</p>
-
+<!-- <p align="center">
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=1E6788&repeat=false&width=435&lines=console.log(%22Hello%2C+World%22)" alt="Typing SVG" /></a>
+</p> -->
 
 这是我现在的主页毛胚，计划是用于记录一些平时的思考。
 
-
-
-<!-- 顶部 Hero
-<div class="hero">
-  <div class="badge">v1.0 · Notes / Docs</div>
-  <h1>你的主页标题</h1>
-  <p class="sub">
-    一句话描述：专注、克制、信息密度高。用 Markdown 写内容，用少量 HTML 做“卡片 / 按钮 / 分栏”。
-  </p>
-
-  <div class="cta">
-    <a class="btn primary" href="#start">开始阅读</a>
-    <a class="btn" href="#toc">目录</a>
-    <a class="btn ghost" href="https://github.com/yourname/yourrepo">GitHub</a>
-  </div>
-
-  <div class="meta">
-    <span>Last updated: 2026-02-17</span>
-    <span>·</span>
-    <span>Author: Sheeran</span>
-  </div>
-</div>
-
-<!-- 三列亮点 -->
-<div class="grid grid-3">
-  <div class="card">
-    <div class="card-title">结构清晰</div>
-    <div class="card-desc">用分区与卡片呈现“你希望别人 10 秒内看到的东西”。</div>
-  </div>
-  <div class="card">
-    <div class="card-title">质感排版</div>
-    <div class="card-desc">留白、字重、边框与阴影都很克制，整体更“高级”。</div>
-  </div>
-  <div class="card">
-    <div class="card-title">可维护</div>
-    <div class="card-desc">核心内容仍是 Markdown，迭代成本低，不会变成纯前端工程。</div>
-  </div>
-</div>
-
-
-## <span id="start">快速开始</span>
+### 快速开始
 
 <div class="grid grid-2">
   <div class="card">
     <div class="card-title">推荐入口</div>
+    <div class="card-desc">从随笔切入，快速看到我在关注什么。</div>
     <ul class="list">
-      <li><a href="./guide/">📌 Guide</a>：从 0 到 1 的使用方式</li>
-      <li><a href="./notes/">🧠 Notes</a>：主题笔记与推导</li>
-      <li><a href="./projects/">🧩 Projects</a>：项目与复盘</li>
+      <li>
+        <a href="./投资随笔/佰维存储/"><b>📌 佰维存储</b></a>
+        ：存储周期、预期与交易结构
+      </li>
+      <li>
+        <a href="./投资随笔/江顺科技/"><b>🚀 江顺科技</b></a>
+        ：商业航天产业链、制造端弹性
+      </li>
+      <li>
+        <a href="./投资随笔/英特尔与CPU产能/"><b>🧩 英特尔与 CPU 产能</b></a>
+        ：供给修复、节奏与外溢影响
+      </li>
     </ul>
+    <div class="tip">
+      本站保持克制表达、高信息密度、持续更新迭代。
+    </div>
+
   </div>
 
   <div class="card">
-    <div class="card-title">搜索 / 导航</div>
-    <div class="card-desc">在这里放置站内搜索、最近更新、标签云（取决于你的框架支持）。</div>
-    <div class="tip">
-      小提示：不要堆太多入口。宁可少而准，让页面“看起来更贵”。
+    <div class="card-title">栏目导航</div>
+    <div class="card-desc">按 mkdocs.yml 导航进入对应板块。</div>
+    <div class="grid">
+      <a class="card card-link" href="./投资随笔/佰维存储/">
+        <div class="card-title">投资随笔</div>
+        <div class="card-desc">围绕个股、产业链与预期差的记录与复盘。</div>
+      </a>
+      <a class="card card-link" href="./金融理论知识/价值与价格/">
+        <div class="card-title">金融理论知识</div>
+        <div class="card-desc">金融理论：概念、框架与经济学常识。</div>
+      </a>
+      <a class="card card-link" href="./投资学理论知识/货币的时间价值/">
+        <div class="card-title">投资学理论知识</div>
+        <div class="card-desc">投资理论：风险、预期管理与直觉。</div>
+      </a>
     </div>
   </div>
 </div>
 
 ---
 
-## <span id="toc">目录</span>
-
-<div class="grid grid-3">
-  <a class="card card-link" href="./math/">
-    <div class="card-title">Math</div>
-    <div class="card-desc">推导、公式与直觉</div>
-  </a>
-  <a class="card card-link" href="./ml/">
-    <div class="card-title">Machine Learning</div>
-    <div class="card-desc">算法、实验、评估</div>
-  </a>
-  <a class="card card-link" href="./quant/">
-    <div class="card-title">Quant</div>
-    <div class="card-desc">策略、回测与风控</div>
+<div align="center">
+  <a href="https://www.buymeacoffee.com/sheeranxue" target="_blank">
+    <img
+      src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+      alt="Buy Me A Coffee"
+      height="60"
+      width="217"
+    />
   </a>
 </div>
-
----
 
 <div class="footer">
   <div class="footer-left">
     <div class="footer-title">Keep it simple.</div>
-    <div class="footer-desc">用最少的装饰，突出最重要的信息。</div>
+    <div class="footer-desc">共同进步。</div>
   </div>
+
   <div class="footer-right">
-    <a class="link" href="./about/">About</a>
-    <span class="dot">·</span>
-    <a class="link" href="./rss.xml">RSS</a>
+    <a class="link" href="./about/"><b>About</b></a>
   </div>
-</div> -->
+</div>
 
-
-<div align="center">
-<a href="https://www.buymeacoffee.com/sheeranxue" target="_blank">
-  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="60" width="217" />
-</a>
-
-
-<p align="center">
+<!-- <p align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=250&&section=footer&text=BYE!&fontSize=80&fontAlign=50&fontAlignY=70&animation=twinkling" />
-</p>
+</p> -->
