@@ -13,7 +13,7 @@
 
 
 
-<!-- 顶部 Hero -->
+<!-- 顶部 Hero
 <div class="hero">
   <div class="badge">v1.0 · Notes / Docs</div>
   <h1>你的主页标题</h1>
@@ -103,7 +103,7 @@
     <span class="dot">·</span>
     <a class="link" href="./rss.xml">RSS</a>
   </div>
-</div>
+</div> -->
 
 
 <div align="center">
