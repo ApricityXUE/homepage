@@ -44,3 +44,28 @@
 .footer-title{
   font-weight: 600;
 }
+
+/* 徽章容器：用 flex 控制排版（桌面一行，手机也尽量一行/整齐换行） */
+.badges{
+  display: flex;                 /* 变成可控布局 */
+  justify-content: center;       /* 居中 */
+  align-items: center;
+  flex-wrap: wrap;              /* 小屏允许换行，但换得整齐 */
+  gap: 10px;                    /* 用 gap 替代 &emsp; */
+  margin: 0;                    /* 去掉 p 默认上下 margin（更紧凑） */
+}
+
+/* 让徽章图片更一致 */
+.badges img{
+  height: 22px;                 /* 移动端更容易放下一行 */
+}
+
+/* 更小屏时进一步缩一点，尽量保持一行 */
+@media (max-width: 420px){
+  .badges img{
+    height: 20px;
+  }
+  .badges{
+    gap: 8px;
+  }
+}

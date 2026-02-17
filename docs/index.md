@@ -14,6 +14,26 @@
 </p>
 
 <div>
+  <p align="center" class="badges">
+    <a href="https://x.com/r1bjtythrbigbi9" target="_blank">
+      <img src="https://img.shields.io/badge/Twitter-推特-blue" />
+    </a>
+
+    <a href="https://www.youtube.com/@SheeranXue" target="_blank">
+      <img src="https://img.shields.io/badge/YouTube-油管-c32136" />
+    </a>
+
+    <a href="javascript:void(0);" onclick="copyWechatId()">
+      <img src="https://img.shields.io/badge/WeChat-微信-07c160" />
+    </a>
+
+    <a href="https://space.bilibili.com/11490425/" target="_blank">
+      <img src="https://img.shields.io/badge/Bilibili-B站-ff69b4" />
+    </a>
+  </p>
+</div>
+
+<div>
   <p align="center">
     <!-- Twitter -->
     <a href="https://x.com/r1bjtythrbigbi9" target="_blank">
