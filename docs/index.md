@@ -15,30 +15,23 @@
 
 <div>
   <p align="center">
-
     <!-- Twitter -->
     <a href="https://x.com/r1bjtythrbigbi9" target="_blank">
       <img src="https://img.shields.io/badge/Twitter-推特-blue" />
     </a>&emsp;
-
     <!-- YouTube -->
     <a href="https://www.youtube.com/@SheeranXue" target="_blank">
       <img src="https://img.shields.io/badge/YouTube-油管-c32136" />
     </a>&emsp;
-
     <!-- WeChat（点击复制微信号） -->
     <a href="javascript:void(0);" onclick="copyWechatId()">
       <img src="https://img.shields.io/badge/WeChat-微信-07c160" />
     </a>&emsp;
-
     <!-- Bilibili -->
     <a href="https://space.bilibili.com/11490425/" target="_blank">
       <img src="https://img.shields.io/badge/Bilibili-B站-ff69b4" />
     </a>
-
   </p>
-
-  <!-- 提示文字：默认 display:none，因此不会占用任何空间 -->
   <p id="wechat-tip" class="wechat-tip">微信号已复制 ✔</p>
 </div>
 
@@ -74,39 +67,29 @@
 let wechatTipTimer = null;
 
 function copyWechatId() {
-  const wechatId = "your_wechat_id";       // ← 替换成你的微信号
+  const wechatId = "great_xuesiyuan";       // ← 替换成你的微信号
   const tip = document.getElementById("wechat-tip");
-
   navigator.clipboard.writeText(wechatId).then(() => {
-
     // 如果上一次的定时器还在，先清掉，避免连续点击时闪烁/错乱
     if (wechatTipTimer) clearTimeout(wechatTipTimer);
-
     // ① 先让元素参与布局（display:block），这一步会“立即出现”，但仍是透明的（opacity:0）
     tip.style.display = "block";
-
     // ② 下一帧再加 .show，触发 transition，实现渐入（避免直接显示到 opacity:1）
     requestAnimationFrame(() => {
       tip.classList.add("show");
     });
-
     // ③ 2 秒后开始渐出：移除 .show
     wechatTipTimer = setTimeout(() => {
       tip.classList.remove("show");
-
       // ④ 等淡出动画结束后，再 display:none，让它彻底不占空间
       const onEnd = (e) => {
         // 只处理 opacity 的 transitionend，避免 transform 也触发一次导致重复执行
         if (e.propertyName !== "opacity") return;
-
         tip.style.display = "none";
         tip.removeEventListener("transitionend", onEnd);
       };
-
       tip.addEventListener("transitionend", onEnd);
-
     }, 2000);
-
   }).catch(() => {
     // 复制失败（可能是非 HTTPS 或权限限制），你可以改成显示“请手动复制”
     // 这里不弹窗，保持克制；如需我也可以帮你做一个更优雅的 fallback。
