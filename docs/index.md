@@ -15,6 +15,11 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=250&&section=footer&text=BYE!&fontSize=80&fontAlign=50&fontAlignY=70&animation=twinkling" />
 </p>
 
+<div align="center">
+<a href="https://www.buymeacoffee.com/sheeranxue" target="_blank">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="60" width="217" />
+</a>
+
 
 <!-- 顶部 Hero -->
 <div class="hero">
@@ -104,8 +109,6 @@
   </div>
   <div class="footer-right">
     <a class="link" href="./about/">About</a>
-    <span class="dot">·</span>
-    <a class="link" href="./changelog/">Changelog</a>
     <span class="dot">·</span>
     <a class="link" href="./rss.xml">RSS</a>
   </div>
