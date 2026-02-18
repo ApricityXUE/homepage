@@ -79,8 +79,19 @@
   display: block;
 }
 
+.fred-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.fred-wrapper iframe {
+  width: 670px;
+  height: 525px; /* 475 + 底部区域 */
+  transform-origin: top left;
+}
+
 @media (max-width: 768px) {
-  .fred-frame iframe {
+  .fred-wrapper iframe {
     transform: scale(calc(100vw / 670));
   }
 }
