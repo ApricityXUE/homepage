@@ -52,7 +52,7 @@
   align-items: center;
 
   flex-wrap: wrap;              /* 桌面够宽：一般不会换行；窄屏可换行 */
-  gap: 24px;                    /* ✅ 桌面端松一点（关键） */
+  gap: 22px;                    /* ✅ 桌面端松一点（关键） */
   margin: 10px 0 0;             /* 给上方留点气口 */
   padding: 0;                   /* 不额外挤占空间 */
 }
