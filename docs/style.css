@@ -61,59 +61,39 @@
   }
 }
 
-/* FRED 卡片：隐藏任何外溢，保持卡片干净 */
-.fred-card{
-  overflow: hidden;
-}
-/* 自适应容器：高度更“富余”，并加一层底部安全垫 */
+/* FRED 容器：按真实比例自适应 */
 .fred-frame{
-  margin-top: 10px;
-  /* 关键：比之前更高一点，减少 1~6px 的溢出概率 */
-  height: clamp(320px, 58vh, 520px);
-  /* 再给一个“安全垫”：让 iframe 实际可视高度略多 */
-  padding-bottom: 10px;
+  max-width: 670px;      /* 关键：不让视口超过图表设计宽度 */
+  margin: 10px auto 0;   /* 居中 */
+
+  aspect-ratio: 670 / 510;
   border-radius: 14px;
   overflow: hidden;
   border: 1px solid rgba(0,0,0,.06);
 }
 
-/* iframe 填满容器，并额外加一点高度（吃掉微小溢出） */
 .fred-frame iframe{
   width: 100%;
-  height: calc(100% + 12px); /* 关键：+12px 安全余量 */
+  height: 100%;
   border: 0;
   display: block;
-  /* 某些浏览器会参考这个，但不是所有都生效 */
-  overflow: hidden;
 }
 
-/* 移动端：再稍微加一点（因为字体渲染/工具栏更容易溢出） */
-@media (max-width: 900px){
-  .fred-frame{
-    height: clamp(340px, 52vh, 560px);
-    padding-bottom: 12px;
-  }
-  .fred-frame iframe{
-    height: calc(100% + 14px);
-  }
-}
 
-.nyfed-card{ overflow: hidden; }
-
-/* “窗口”高度：你想看到多大的图表就设多高 */
+/* 容器：像“窗口”一样裁剪 iframe */
 .nyfed-crop{
   margin-top: 10px;
-  height: clamp(680px, 60vh, 1000px);
-  overflow: hidden;
+  height: 650px;  /* 你想显示图表多高 */
+  overflow: hidden;                  /* 关键：裁掉超出部分 */
   border-radius: 14px;
   border: 1px solid rgba(0,0,0,.06);
+  background: #fff;
 }
 
-/* iframe 故意设得更高，再上移，把页眉裁掉 */
+/* iframe：故意做得更高，然后往上挪，把页眉裁掉 */
 .nyfed-iframe{
   width: 100%;
-  height: 2500px;                 /* 够大，避免内部滚动 */
+  height: 650px;                    /* 故意给大一点，避免内部滚动 */
   border: 0;
   display: block;
-  transform: translateY(-1040px);  /* ← 调这个：-200 ~ -320 常见 */
 }
