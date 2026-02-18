@@ -80,6 +80,12 @@
 }
 
 
+@media (max-width: 768px) {
+  .fred-frame iframe {
+    transform: scale(calc(100vw / 670));
+  }
+}
+
 /* 容器：像“窗口”一样裁剪 iframe */
 .nyfed-crop{
   margin-top: 10px;
