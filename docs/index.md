@@ -105,7 +105,7 @@ function copyWechatId() {
 
 ## 快速开始
 
-<div class="grid grid-2">
+<div class="grid">
   <div class="card">
     <div class="card-title">推荐入口</div>
     <div class="card-desc">从随笔切入，快速看到我在关注什么。</div>

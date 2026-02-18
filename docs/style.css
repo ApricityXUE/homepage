@@ -1,5 +1,4 @@
 
-
 /* ---------- 卡片 ---------- */
 .card{
   padding: 20px;
@@ -8,21 +7,16 @@
   box-shadow: 0 6px 18px rgba(0,0,0,.05);
   transition: transform .15s ease;
 }
-
 .card:hover{
   transform: translateY(-2px);      /* 轻微悬浮 */
 }
-
 .card-title{
   font-weight: 600;
   margin-bottom: 6px;
 }
-
 .card-desc{
   font-size: 14px;
 }
-
-
 .tip{
   margin-top: 12px;
   padding: 12px 12px;
@@ -30,7 +24,6 @@
   border: 1px dashed rgba(255,255,255,.18);
   background: rgba(46, 43, 138, 0.03);
 }
-
 
 /* ---------- Footer ---------- */
 .footer{
@@ -40,7 +33,6 @@
   justify-content: space-between;
   font-size: 14px;
 }
-
 .footer-title{
   font-weight: 600;
 }
@@ -50,18 +42,15 @@
   display: flex;                 /* 用 flex 管控间距与居中 */
   justify-content: center;       /* 居中 */
   align-items: center;
-
   flex-wrap: wrap;              /* 桌面够宽：一般不会换行；窄屏可换行 */
   gap: 24px;                    /* ✅ 桌面端松一点（关键） */
   margin: 10px 0 0;             /* 给上方留点气口 */
   padding: 0;                   /* 不额外挤占空间 */
 }
-
 /* 徽章图片：桌面端略大一点更“舒展” */
 .badges img{
   height: 20px;                 /* ✅ 桌面端更舒服（22~28 都可） */
 }
-
 /* 平板/小屏：间距收紧一点 */
 @media (max-width: 900px){
   .badges{
@@ -70,4 +59,61 @@
   .badges img{
     height: 18px;               /* 移动端徽章小一点，更容易一行/两行 */
   }
+}
+
+/* FRED 卡片：隐藏任何外溢，保持卡片干净 */
+.fred-card{
+  overflow: hidden;
+}
+/* 自适应容器：高度更“富余”，并加一层底部安全垫 */
+.fred-frame{
+  margin-top: 10px;
+  /* 关键：比之前更高一点，减少 1~6px 的溢出概率 */
+  height: clamp(320px, 58vh, 520px);
+  /* 再给一个“安全垫”：让 iframe 实际可视高度略多 */
+  padding-bottom: 10px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,.06);
+}
+
+/* iframe 填满容器，并额外加一点高度（吃掉微小溢出） */
+.fred-frame iframe{
+  width: 100%;
+  height: calc(100% + 12px); /* 关键：+12px 安全余量 */
+  border: 0;
+  display: block;
+  /* 某些浏览器会参考这个，但不是所有都生效 */
+  overflow: hidden;
+}
+
+/* 移动端：再稍微加一点（因为字体渲染/工具栏更容易溢出） */
+@media (max-width: 900px){
+  .fred-frame{
+    height: clamp(340px, 52vh, 560px);
+    padding-bottom: 12px;
+  }
+  .fred-frame iframe{
+    height: calc(100% + 14px);
+  }
+}
+
+.nyfed-card{ overflow: hidden; }
+
+/* “窗口”高度：你想看到多大的图表就设多高 */
+.nyfed-crop{
+  margin-top: 10px;
+  height: clamp(680px, 60vh, 1000px);
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,.06);
+}
+
+/* iframe 故意设得更高，再上移，把页眉裁掉 */
+.nyfed-iframe{
+  width: 100%;
+  height: 2500px;                 /* 够大，避免内部滚动 */
+  border: 0;
+  display: block;
+  transform: translateY(-1040px);  /* ← 调这个：-200 ~ -320 常见 */
 }
