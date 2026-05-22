@@ -1,0 +1,125 @@
+
+/* ---------- 卡片 ---------- */
+.card{
+  padding: 20px;
+  border-radius: 18px;
+  border: 1px solid rgba(0,0,0,.08);
+  box-shadow: 0 6px 18px rgba(0,0,0,.05);
+  transition: transform .15s ease;
+}
+.card:hover{
+  transform: translateY(-2px);      /* 轻微悬浮 */
+}
+.card-title{
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.card-desc{
+  font-size: 14px;
+}
+.tip{
+  margin-top: 12px;
+  padding: 12px 12px;
+  border-radius: 14px;
+  border: 1px dashed rgba(255,255,255,.18);
+  background: rgba(46, 43, 138, 0.03);
+}
+
+/* ---------- Footer ---------- */
+.footer{
+  max-width: 980px;
+  margin: 40px auto 60px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.footer-title{
+  font-weight: 600;
+}
+
+/* 徽章条：桌面端“更松更高级”，移动端“更紧更省空间” */
+.badges{
+  display: flex;                 /* 用 flex 管控间距与居中 */
+  justify-content: center;       /* 居中 */
+  align-items: center;
+  flex-wrap: wrap;              /* 桌面够宽：一般不会换行；窄屏可换行 */
+  gap: 24px;                    /* ✅ 桌面端松一点（关键） */
+  margin: 10px 0 0;             /* 给上方留点气口 */
+  padding: 0;                   /* 不额外挤占空间 */
+}
+/* 徽章图片：桌面端略大一点更“舒展” */
+.badges img{
+  height: 20px;                 /* ✅ 桌面端更舒服（22~28 都可） */
+}
+/* 平板/小屏：间距收紧一点 */
+@media (max-width: 900px){
+  .badges{
+    gap: 10px;                  /* 移动端挤一点没关系：这里变紧 */
+  }
+  .badges img{
+    height: 18px;               /* 移动端徽章小一点，更容易一行/两行 */
+  }
+}
+
+/* FRED 容器：按真实比例自适应 */
+.fred-frame{
+  max-width: 670px;
+  margin: 10px auto 0;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,.06);
+  width: 100%;
+  position: relative;
+}
+
+.fred-stage{
+  width: 670px;
+  height: 525px;
+  transform-origin: 0 0;
+}
+
+.fred-stage iframe{
+  width: 670px;
+  height: 525px;
+  border: 0;
+  display: block;
+}
+
+
+/* 容器：像“窗口”一样裁剪 iframe */
+.nyfed-crop{
+  margin-top: 10px;
+  height: 650px;  /* 你想显示图表多高 */
+  overflow: hidden;                  /* 关键：裁掉超出部分 */
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,.06);
+  background: #fff;
+}
+
+/* iframe：故意做得更高，然后往上挪，把页眉裁掉 */
+.nyfed-iframe{
+  width: 100%;
+  height: 650px;                    /* 故意给大一点，避免内部滚动 */
+  border: 0;
+  display: block;
+}
+
+
+/* 仅用于about中的图 */
+.fred-wrapper{
+  width: 100%;
+  overflow: visible;         /* 先排除裁剪干扰 */
+}
+
+.fred-stage{
+  width: 670px;
+  height: 525px;
+  transform-origin: 0 0;
+}
+
+.fred-stage iframe{
+  width: 670px;
+  height: 525px;
+  display: block;            /* 防止 inline 基线/居中怪问题 */
+  border: 0;
+}
